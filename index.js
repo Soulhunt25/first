@@ -1,24 +1,14 @@
-function checkprime(num) {
-    let count = 0;
-
-    for (let i = 2; i < num; i++) {
-        if (num % i == 0) {
-            count++;
-        }
-    }
-
-    if (count == 0) {
-        return true
-    } else {
-        return false
+function checkprime(number){
+let factor = 0;
+for(let i=2;i<=number;i++){
+    if(number%i==0){
+        factor++;
     }
 }
-
-
-let ans = checkprime(5);
-
-if (ans == true) {
-    console.log("prime")
-} else {
-    console.log("not a prime")
+if(factor==1){
+    console.log("Prime Number");
+}else{
+    console.log("Not a Prime Number");
+}
+  
 }
