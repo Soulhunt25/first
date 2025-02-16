@@ -10,6 +10,5 @@ if(factor==1){
 }else{
     console.log("Not a Prime Number");
 }
+  
 }
-
-checkprime(5);
